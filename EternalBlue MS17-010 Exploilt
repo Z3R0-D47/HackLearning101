@@ -6,8 +6,6 @@ Ensure you have Metasploit installed on your system. You can use Kali Linux, Par
 ## 2. Start Metasploit Framework
 Open a terminal and launch Metasploit by typing:
 
-```
-msfconsole
-```bash
+`msfconsole`
 
 
