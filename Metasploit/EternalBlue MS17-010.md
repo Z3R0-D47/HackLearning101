@@ -1,10 +1,14 @@
 # Exploiting MS17-010 EternalBlue Vulnerability using Metasploit
 
-## Metasploit
+<details>
+<summary><strong>Metasploit</strong></summary>
 Metasploit is an open-source penetration testing framework that offers a vast collection of tools and exploits for security testing, vulnerability assessment, and penetration testing. It provides a comprehensive platform for security professionals and researchers to test systems, identify vulnerabilities, and execute various security assessments. Metasploit includes a vast database of exploits, payloads, auxiliary modules, and post-exploitation tools, enabling users to assess the security posture of systems and networks.
+</details>
 
-## EternalBlue
+<details>
+<summary><strong>Eternal Blue</strong></summary>
 EternalBlue is the codename for a critical software vulnerability in Microsoft's Windows operating system discovered by the National Security Agency (NSA) and later leaked by a hacking group. This vulnerability (CVE-2017-0144) affects the Windows Server Message Block (SMB) protocol. EternalBlue exploits a flaw in the SMBv1 protocol, allowing attackers to execute arbitrary code remotely on a vulnerable system without requiring user interaction. It was famously used as part of the WannaCry ransomware attack, highlighting its significance and the need for timely system patching and security measures.
+</details>
 
 ## 1. Set Up Your Environment
 Ensure you have Metasploit installed on your system. You can use Kali Linux, Parrot OS, or install Metasploit manually on your preferred OS.
@@ -85,6 +89,7 @@ Gather System Information: Retrieve system information like system details, user
 File Operations: Manipulate files on the compromised system using commands like `download`, `upload`, `ls`, `cd`, etc.
 
 Privilege Escalation: Attempt to elevate privileges on the target system using modules like `getsystem`, `migrate`, etc.
+
 
 
 
