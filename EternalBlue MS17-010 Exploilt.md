@@ -54,9 +54,7 @@ Once the exploit succeeds and you gain access to the compromised system, you can
 
 ### Some useful post-exploitation commands:
 
-- **System Commands**: Execute system commands on the target system using 
-
-```shell```
+- **System Commands**: Execute system commands on the target system using : ```shell```
   
 Gather System Information: Retrieve system information like system details, user information, etc. using commands such as `sysinfo`, `getuid`, etc.
 
