@@ -1,12 +1,14 @@
 # Exploiting MS17-010 EternalBlue Vulnerability using Metasploit
 
 ## 1. Set Up Your Environment
-
 Ensure you have Metasploit installed on your system. You can use Kali Linux, Parrot OS, or install Metasploit manually on your preferred OS.
 
 ## 2. Start Metasploit Framework
-
 Open a terminal and launch Metasploit by typing:
 
+```bash
 msfconsole
+```
+
+
 
