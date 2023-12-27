@@ -28,7 +28,7 @@ help
 
 ### Metasploit module:
 
-In Metasploit, understanding the 4 essential categories is crucial. Using `show all` to display all available modules.
+In Metasploit, understanding various module categories is crucial for effective penetration testing and exploit development.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Category     | Description                                                                                       | Example Usage                  |
@@ -37,6 +37,9 @@ In Metasploit, understanding the 4 essential categories is crucial. Using `show 
 | `auxiliary`  | Tools in Metasploit for tasks like scanning, information gathering, etc., without compromise.     | `show auxiliary`               |
 | `payload`    | Code/scripts performing actions on exploited systems (e.g., reverse shell or executing commands). | `show payload`                 |
 | `post`       | Modules for actions post-exploitation like info gathering, privilege escalation, etc.             | `show post`                    |
+| `encoder`    | Encoders modify payloads to evade antivirus or intrusion detection systems.                       | `show encoders`                |
+| `nop`        | No Operation sleds used for payload alignment in exploit development.                             | `show nops`                    |
+| `evasion`    | Evasion modules designed to bypass security defenses such as firewalls, IDS/IPS, and antivirus.   | `show evasion`                 |
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 3. Search for the MS17-010 EternalBlue Exploit Module
