@@ -26,11 +26,18 @@ msfconsole
 help
 ```
 
-### Search EternalBlue exploits module using:
+### Metasploit module:
 
-```bash
-show exploits
-```
+In Metasploit, understanding the 4 essential categories is crucial. Using `show all` to display all available modules.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+| Category     | Description                                                                                       | Example Usage                  |
+|--------------|---------------------------------------------------------------------------------------------------|--------------------------------|
+| `exploit`    | Targets vulnerabilities in software or systems for unauthorized access or code execution.         | `show exploit`                 |
+| `auxiliary`  | Tools in Metasploit for tasks like scanning, information gathering, etc., without compromise.     | `show auxiliary`               |
+| `payload`    | Code/scripts performing actions on exploited systems (e.g., reverse shell or executing commands). | `show payload`                 |
+| `post`       | Modules for actions post-exploitation like info gathering, privilege escalation, etc.             | `show post`                    |
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 3. Search for the MS17-010 EternalBlue Exploit Module
 To search for a specific module:
