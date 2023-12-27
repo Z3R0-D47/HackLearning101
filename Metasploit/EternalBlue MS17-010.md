@@ -71,7 +71,7 @@ Once all necessary options are set, run the exploit by typing:
 exploit
 ```
 
-The exploit might take some time to run. Upon successful exploitation, Metasploit may display the meterpreter prompt, indicating a successful compromise of the target system.
+The exploit might take some time to run. Upon successful exploitation, Metasploit may display the `meterpreter` prompt, indicating a successful compromise of the target system.
 
 ## 8. Post-Exploitation Actions
 
@@ -79,17 +79,46 @@ Once the exploit succeeds and you gain access to the compromised system, you can
 
 ### Some useful post-exploitation commands:
 
-- **System Commands**: Execute system commands on the target system using :
+- **System Commands** 
+
+Execute system commands on the target system using :
   
 ```bash
 shell
 ```
   
-Gather System Information: Retrieve system information like system details, user information, etc. using commands such as `sysinfo`, `getuid`, etc.
+- **Gather System Information**
 
-File Operations: Manipulate files on the compromised system using commands like `download`, `upload`, `ls`, `cd`, etc.
+Retrieve system information like system details, user information, etc. using commands:
 
-Privilege Escalation: Attempt to elevate privileges on the target system using modules like `getsystem`, `migrate`, etc.
+```bash
+sysinfo,getuid
+``` 
+
+- **File Operations**
+
+Manipulate files on the compromised system using commands:
+
+```bash
+download, upload, ls, cd
+```
+
+- **Privilege Escalation**
+
+Attempt to elevate privileges on the target system using modules:
+
+```bash
+getsystem, migrate
+```
+
+- **Open URL**
+
+Open URL in compromised device using commands like:
+
+```bash
+start explorer https://www.example.com
+```
+
 
 
 
