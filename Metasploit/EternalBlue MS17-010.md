@@ -28,7 +28,7 @@ help
 
 ### Metasploit module:
 
-In Metasploit, understanding various module categories is crucial for effective penetration testing and exploit development.
+In Metasploit, understanding various module categories is crucial for effective penetration testing and exploit development. Use `show all` command to display all available modules.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Category     | Description                                                                                       | Example Usage                  |
