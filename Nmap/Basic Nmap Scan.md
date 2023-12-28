@@ -102,8 +102,9 @@ This table provides different timing options available in Nmap, allowing users t
 | Output Format           | Description                                              | Example Usage                           |
 |-------------------------|----------------------------------------------------------|-----------------------------------------|
 | Normal Output (-oN)     | Default human-readable format on the terminal.           | `nmap -oN scan_results.txt <target>`    |
-| Grepable Output (-oG)   | Machine-parsable output suitable for scripting.          | `nmap -oG scan_results.gnmap <target>`  |
+| Grepable Output (-oG)   | Machine grepable output suitable for scripting.          | `nmap -oG scan_results.gnmap <target>`  |
 | XML Output (-oX)        | Results in XML format for importing or further analysis. | `nmap -oX scan_results.xml <target>`    |
+| All Formats (-oA)       | Generates all available output formats simultaneously.   | `nmap -oA scan_results <target>`        |
 --------------------------------------------------------------------------------------------------------------------------------
 
 This table displays different output formats available in Nmap, providing users flexibility in how scan results are saved based on their requirements. Adjust the command by replacing <target> with the IP address or hostname of the target network.
