@@ -3,8 +3,8 @@ Nmap, recognized as Network Mapper, represents an open-source utility extensivel
 
 <details>
 <summary><strong>Set Up Your Environment (Skip this if already done)</strong></summary> 
-Before using Nmap for network scanning and reconnaissance, ensure you have it installed on your system. You can install Nmap on various operating systems like Kali Linux, Parrot OS, Windows, or macOS. 
-  
+Before using Nmap for network scanning and reconnaissance, ensure you have it installed on your system. You can install Nmap on various operating systems like Kali Linux, Parrot OS, Windows, or macOS.<br><br>
+
 Here's how to get started:
 
 - Installing Nmap on Linux:
@@ -18,8 +18,7 @@ sudo apt-get install nmap
 
 - For Red Hat-based Systems (e.g., Fedora, CentOS):
 Run the following command:
-```
-bash
+```bash
 sudo yum install nmap
 ```
 
