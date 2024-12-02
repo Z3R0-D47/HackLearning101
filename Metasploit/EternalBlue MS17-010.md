@@ -33,7 +33,7 @@ In Metasploit, understanding various module categories is crucial for effective 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Category     | Description                                                                                       | Example Usage                  |
 |--------------|---------------------------------------------------------------------------------------------------|--------------------------------|
-| `exploit`    | Targets vulnerabilities in software or systems for unauthorized access or code execution.         | `show exploits`                 |
+| `exploit`    | Targets vulnerabilities in software or systems for unauthorized access or code execution.         | `show exploits`                |
 | `auxiliary`  | Tools in Metasploit for tasks like scanning, information gathering, etc., without compromise.     | `show auxiliary`               |
 | `payload`    | Code/scripts performing actions on exploited systems (e.g., reverse shell or executing commands). | `show payload`                 |
 | `post`       | Modules for actions post-exploitation like info gathering, privilege escalation, etc.             | `show post`                    |
