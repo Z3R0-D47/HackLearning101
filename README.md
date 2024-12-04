@@ -1,6 +1,6 @@
 # HackLearning101: Penetration Testing Basics
 
-Welcome to HackLearning101! This repository is your gateway to learning the fundamentals of penetration testing and ethical hacking in a beginner-friendly manner.
+Welcome to HackLearning101. This repository is your gateway to learning the fundamentals of penetration testing and ethical hacking in a beginner-friendly manner.
 
 ## Purpose 
 HackLearning101 is dedicated to sharing foundational cybersecurity knowledge, essential tools, and practical hands-on exercises, serving as a platform to document and showcase my learning journey and progress in the field of ethical hacking and penetration testing.
